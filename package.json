@@ -1,0 +1,25 @@
+{
+  "name": "wdi_news",
+  "version": "1.0.0",
+  "description": "Things to Share",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nolds9/wdi_news.git"
+  },
+  "keywords": [
+    "MEAN"
+  ],
+  "author": "Nick O",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nolds9/wdi_news/issues"
+  },
+  "homepage": "https://github.com/nolds9/wdi_news#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
