@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/nolds9/wdi_news#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "nodemon": "^1.9.1"
   }
 }
