@@ -2,6 +2,7 @@ var express = require("express");
 var hbs     = require("express-handlebars");
 
 var app     = express();
+var db      = require("./db/connection");
 
 // Configure Handlebars to our app's conventions
 app.set("view engine", "hbs");
@@ -18,7 +19,9 @@ app.get("/", function(req, res){
 });
 
 app.get("/articles", function(req, res){
-  res.render("articles-index");
+  res.render("articles-index", {
+    articles: db.articles
+  });
 });
 
 app.listen(3001, function onPort (){

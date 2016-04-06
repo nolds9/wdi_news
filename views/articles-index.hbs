@@ -1,1 +1,10 @@
-<h2>{{totalArticles}} New Articles</h2>
+<h2>{{articles.length}} New Articles</h2>
+<ol>
+  {{#each articles as |article index|}}
+    <li>
+      <h3>
+        <a href="{{article.href}}">{{article.title}}</a>
+      </h3>
+    </li>
+  {{/each}}
+</ol>
