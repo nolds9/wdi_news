@@ -4,6 +4,9 @@ var hbs     = require("express-handlebars");
 var app     = express();
 var db      = require("./db/connection");
 
+// Declare our app port per environment
+app.set("port", process.env.PORT || 3001)
+
 // Configure Handlebars to our app's conventions
 app.set("view engine", "hbs");
 app.engine(".hbs", hbs({
@@ -31,6 +34,6 @@ app.get("/articles/:index", function(req, res){
   });
 });
 
-app.listen(3001, function onPort (){
+app.listen(app.get("port"), function onPort (){
   console.log("It's aliiive!");
 });
