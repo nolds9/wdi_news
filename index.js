@@ -17,6 +17,10 @@ app.get("/", function(req, res){
   res.render("app-welcome");
 });
 
+app.get("/articles", function(req, res){
+  res.render("articles-index");
+});
+
 app.listen(3001, function onPort (){
   console.log("It's aliiive!");
 });
