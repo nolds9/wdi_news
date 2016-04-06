@@ -1,12 +1,16 @@
-<div class="article-show-container">
-  <div class="article-details">
-    <h2><a href={{article.href}}>{{article.title}}<a></h2>
-    <p>Posted by: {{article.submitter}}</p>
-    <p>
-      Rank: {{article.rank}}
-    </p>
-    <p>
-      Points: {{article.points}}
-    </p>
+{{#unless candidate}}
+  <h2>That Article could not be found!</h2>
+{{else}}
+  <div class="article-show-container">
+    <div class="article-details">
+      <h2><a href={{article.href}}>{{article.title}}<a></h2>
+      <p>Posted by: {{article.submitter}}</p>
+      <p>
+        Rank: {{article.rank}}
+      </p>
+      <p>
+        Points: {{article.points}}
+      </p>
+    </div>
   </div>
-</div>
+{{/unless}}
