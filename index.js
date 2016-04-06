@@ -24,6 +24,12 @@ app.get("/articles", function(req, res){
   });
 });
 
+app.get("/articles/:index", function(req, res){
+  res.render("articles-show", {
+    article: db.articles[req.params.index]
+  });
+});
+
 app.listen(3001, function onPort (){
   console.log("It's aliiive!");
 });
